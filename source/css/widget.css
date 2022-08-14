@@ -1,0 +1,17 @@
+.widget-title {
+    color: #008c95;
+    font-size: 1rem;
+    padding: 1.25rem 0;
+    position: relative;
+    border-top: 2px solid #D2E3E4;
+}
+
+.widget-title:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #008c95;
+}

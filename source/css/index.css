@@ -1,0 +1,31 @@
+.main {
+    margin: 20px;
+}
+
+.top {
+
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content .start {
+    width: calc(100% - 366px);
+}
+.content .end {
+    width: 346px;
+    padding: 20px;
+    background: var(--bs-white);
+}
+
+.content-articles {
+
+}
+
+.content-categories, .content-tags {
+    min-height: 240px;
+}

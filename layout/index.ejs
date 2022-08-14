@@ -1,0 +1,37 @@
+<div class="main">
+    <div class="top">
+
+    </div>
+    <div class="content">
+        <div class="start">
+            <div class="content-articles">
+                <% page.posts.each(function(post) { %>
+                    <%- partial('_partial/post/article-info', {post: post})%>
+                <% }) %>
+            </div>
+        </div>
+        <div class="end">
+            <div class="content-categories">
+                <div class="widget-title">
+                    归档
+                </div>
+            </div>
+            <div class="content-categories">
+                <div class="widget-title">
+                    分类
+                </div>
+            </div>
+            <div class="content-tags">
+                <div class="widget-title">
+                    标签
+                </div>
+                <div>
+                    <% site.tags.each(function(tag) { %>
+                        <a href="<%- url_for(tag.path) %>" class="tag"><%= tag.name %></a>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
