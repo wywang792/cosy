@@ -22,10 +22,10 @@
     background: var(--bs-white);
 }
 
-.content-articles {
-
+.content .end > div {
+    margin-bottom: 20px;
 }
 
-.content-categories, .content-tags {
+.content-archives, .content-categories, .content-tags {
     min-height: 240px;
 }
