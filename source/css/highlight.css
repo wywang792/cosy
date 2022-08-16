@@ -1,14 +1,17 @@
-.article-entry pre {
-    margin: 10px 0;
-    padding: 10px 10px;
-    overflow: hidden;
-    overflow-x: auto;
+.article-entry pre,
+.article-entry .highlight {
+    margin: 0;
+    padding: 6px;
     font-size: 14px;
     line-height: 32px;
     color: var(--bs-cyan);
     background: var(--bs-dark);
 }
 
-.article-entry pre code{
+.highlight {
+    border-radius: 4px;
+}
+
+.article-entry pre span {
     font-family: Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace,"Microsoft YaHei";
 }

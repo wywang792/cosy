@@ -1,7 +1,5 @@
 navs:
-  归档: /
-  分类: /
-  标签: /
+
 
 # 网易云音乐插件
 music:
@@ -14,3 +12,6 @@ music:
   auto: false
   # 提示文本(关闭请设置为false)
   text: false
+
+calendar:
+  language: zh-CN
