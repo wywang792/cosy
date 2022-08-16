@@ -2,7 +2,11 @@
 <%- js('/js/languages.js')%>
 <%- js('/js/calendar.js')%>
 <%- js('/js/index.js')%>
+<%- js('/plugins/highlight.min.js')%>
 <script type="application/javascript">
     $('#calendar').aCalendar('<%= theme.calendar.language || config.language %>',
         $.extend(<%- JSON.stringify(theme.calendar.options) %>));
+</script>
+<script>
+    hljs.highlightAll();
 </script>
