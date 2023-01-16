@@ -1,3 +1,7 @@
+.paginator-wrapper {
+    text-align: center;
+}
+
 .extend.prev {
     float: left;
 }
@@ -12,6 +16,6 @@
 }
 
 .page-number.current {
-    color: var(--bs-blue);
+    color: var(--theme-color);
     font-weight: bold
 }

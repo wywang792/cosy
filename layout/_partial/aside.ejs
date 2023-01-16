@@ -1,4 +1,4 @@
-<div class="header">
+<div class="site-aside__header">
     <div class="avatar-wrap">
         <a href="<%- url_for('../index')%>">
             <img class="avatar" src="<%- url_for('/images/avatar.jpg')%>" alt="">
@@ -8,7 +8,7 @@
         <span class="name"><%= config.author %></span>
     </div>
 </div>
-<div class="nav">
+<div class="site-aside__nav">
     <ul>
         <% for (var key in theme.navs){ %>
             <li>
@@ -21,7 +21,7 @@
     <%# "网易云音乐插件" %>
     <% var defaultHeight = theme.music.type === 1 ? '32' : '66'; %>
     <% var defaultIframeHeight = theme.music.type === 1 ? '52' : '86'; %>
-    <div class="music">
+    <div class="site-aside__music">
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="<%=defaultIframeHeight%>" src="//music.163.com/outchain/player?type=2&id=<%=theme.music.id||554191378%>&auto=<%=theme.music.auto?1:0%>&height=<%=defaultHeight%>"></iframe>
     </div>
     <% if (theme.music.text || theme.music.text == null){ %>

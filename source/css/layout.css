@@ -1,32 +1,36 @@
-.container {
+.site-layout {
+    position: relative;
     height: 100vh;
 }
 
-.container > .left {
-    float: left;
+.site-aside {
     position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
     width: 220px;
-    height: 100%;
-    background: var(--bs-gray-dark);
+    background: var(--bg-gray-dark);
 }
 
-.container > .right {
-    float: right;
-    width: 268px;
-    background: var(--bs-white);
-}
-
-.container > .main {
-    width: calc(100% - 488px);
+.site-main {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    right: 0;
     min-height: 100vh;
-    background: var(--bs-light);
+    display: flex;
+    background: var(--bg-light)
 }
 
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
+.site-main > .site-content {
+    width: calc(100% - 288px);
+    padding: 20px;
 }
 
-.clearfix:after {
-    clear: both;
+.site-main > .site-widget {
+    width: 268px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: var(--bg-white);
 }

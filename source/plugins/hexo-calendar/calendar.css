@@ -67,18 +67,18 @@
   border-radius: 43px;
 }
 .cal tbody a {
-  background-color: #008c95;
-  color: #fff;
+  background-color: var(--theme-color);
+  color: var(--bg-white);
   display: block;
   font-weight: 700;
   border-radius: inherit;
 }
 .cal tbody .cal-today {
   background-color: skyblue;
-  color: #fff;
+  color: var(--bg-white);
 }
 .cal .cal-gray {
-  color: #ddd;
+  color: var(--bg-light-gray);
 }
 .cal th,
 .cal td {
@@ -88,15 +88,15 @@
   text-align: center;
 }
 .cal .cal-foot {
-  color: #008c95;
+  color: var(--theme-color);
 }
 .cal-title a:hover,
 .cal .cal-foot:hover,
 .cal .cal-foot:focus,
 .cal tbody a:hover,
 .cal tbody a:focus {
-  background-color: #008c95;
-  color: #fff;
+  background-color: var(--theme-color);
+  color: var(--bg-white);
   cursor: pointer;
 }
 

@@ -1,9 +1,14 @@
+.widget-wrapper {
+    margin-bottom: 20px;
+    min-height: 100px;
+}
+
 .widget-title {
-    color: #008c95;
-    font-size: 1rem;
-    padding: 1.25rem 0;
+    color: var(--theme-color);
+    font-size: 16px;
+    padding: 12px 0;
     position: relative;
-    border-top: 2px solid #D2E3E4;
+    border-top: 2px solid var(--theme-border-color);
 }
 
 .widget-title:before {
@@ -13,5 +18,16 @@
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: #008c95;
+    background-color: var(--theme-color);
+}
+
+.widget-search {
+    height: 32px;
+    width: 100%;
+    border: 2px solid var(--theme-border-color);
+    border-radius: 8px;
+}
+
+.widget-search:focus, .widget-search:active {
+    outline: none
 }

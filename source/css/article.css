@@ -1,13 +1,13 @@
-.article-info {
+.article {
     margin-bottom: 20px;
     min-height: 150px;
-    background: var(--bs-white);
-    border-color: var(--bs-light);
+    background: var(--bg-white);
+    border-color: var(--bg-light);
     box-shadow: 0 0 30px 0 rgb(40 49 73 / 3%);
 }
 
 .article-title {
-    border-left: 3px solid var(--bs-gray-dark);
+    border-left: 3px solid var(--bg-gray-dark);
 }
 
 .article-title h1 {
@@ -17,7 +17,7 @@
 
 .article-title, .article-entry, .article-tags {
     position: relative;
-    padding: 10px 50px;
+    padding: 10px 30px;
 }
 
 .article-tags {
@@ -29,8 +29,8 @@
     position: absolute;
     top: -2px;
     left: 0;
-    width: 90%;
+    width: 94%;
     height: 1px;
-    margin: 0 5%;
-    background-color: var(--bs-light-gray);
+    margin: 0 3%;
+    background-color: var(--bg-light-gray);
 }

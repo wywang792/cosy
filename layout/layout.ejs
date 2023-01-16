@@ -4,14 +4,14 @@
 <body>
 <div class="site-layout">
     <div class="site-aside">
-        <%- partial('_partial/navigator') %>
+        <%- partial('_partial/aside') %>
     </div>
     <div class="site-main">
-        <div class="left">
+        <div class="site-content">
             <%- body %>
         </div>
-        <div class="right">
-            <%- partial('_partial/right') %>
+        <div class="site-widget">
+            <%- partial('_partial/widget') %>
         </div>
     </div>
 </div>

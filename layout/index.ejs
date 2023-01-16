@@ -1,14 +1,11 @@
-<div class="content">
-    <div class="content-articles">
-        <% page.posts.each(function(post) { %>
-            <%- partial('_partial/post/article-info', {post: post})%>
-        <% }) %>
-    </div>
-    <div class="content-paginator">
-        <%- paginator({
-            prev_text: "上一页",
-            next_text: "下一页"
-        })%>
-    </div>
+<% page.posts.each(function(post) { %>
+    <%- partial('_partial/post/article', {post: post})%>
+<% }) %>
+
+<div class="paginator-wrapper">
+    <%- paginator({
+        prev_text: "上一页",
+        next_text: "下一页"
+    })%>
 </div>
 
