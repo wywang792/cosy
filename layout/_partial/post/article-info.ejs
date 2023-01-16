@@ -5,8 +5,8 @@
         </div>
     </a>
     <div class="article-entry">
-        <% if(post.excerpt) { %>
-            <%- post.excerpt %>
+        <% if(post.cover) { %>
+            <img src="<%- url_for(post.cover) %>" alt="">
         <% } else { %>
             <%- post.content %>
         <% } %>

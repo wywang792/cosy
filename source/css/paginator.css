@@ -1,0 +1,17 @@
+.extend.prev {
+    float: left;
+}
+
+.extend.next {
+    float: right;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.page-number.current {
+    color: var(--bs-blue);
+    font-weight: bold
+}

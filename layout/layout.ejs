@@ -2,12 +2,17 @@
 <html lang="utf-8">
 <%- partial('_partial/head') %>
 <body>
-<div class="container">
-    <div class="left">
-        <%- partial('_partial/left') %>
+<div class="site-layout">
+    <div class="site-aside">
+        <%- partial('_partial/navigator') %>
     </div>
-    <div class="right">
-        <%- body %>
+    <div class="site-main">
+        <div class="left">
+            <%- body %>
+        </div>
+        <div class="right">
+            <%- partial('_partial/right') %>
+        </div>
     </div>
 </div>
 <%- partial('_partial/foot') %>

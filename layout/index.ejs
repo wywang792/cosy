@@ -1,45 +1,14 @@
-<div class="main">
-    <div class="top">
-
+<div class="content">
+    <div class="content-articles">
+        <% page.posts.each(function(post) { %>
+            <%- partial('_partial/post/article-info', {post: post})%>
+        <% }) %>
     </div>
-    <div class="content">
-        <div class="start">
-            <div class="content-articles">
-                <% page.posts.each(function(post) { %>
-                    <%- partial('_partial/post/article-info', {post: post})%>
-                <% }) %>
-            </div>
-        </div>
-        <div class="end">
-            <div class="content-archives">
-                <div class="widget-title">
-                    归档
-                </div>
-                <div>
-                    <div id="calendar"></div>
-                </div>
-            </div>
-            <div class="content-categories">
-                <div class="widget-title">
-                    分类
-                </div>
-                <div>
-                    <% site.categories.each(function(categroy) { %>
-                        <a href="<%- url_for(categroy.path) %>" class="category"><%= categroy.name %></a>
-                    <% }) %>
-                </div>
-            </div>
-            <div class="content-tags">
-                <div class="widget-title">
-                    标签
-                </div>
-                <div>
-                    <% site.tags.each(function(tag) { %>
-                        <a href="<%- url_for(tag.path) %>" class="tag"><%= tag.name %></a>
-                    <% }) %>
-                </div>
-            </div>
-        </div>
+    <div class="content-paginator">
+        <%- paginator({
+            prev_text: "上一页",
+            next_text: "下一页"
+        })%>
     </div>
 </div>
 

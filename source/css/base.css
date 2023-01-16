@@ -1,9 +1,4 @@
 :root {
-    --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #dc3545;
     --bs-orange: #fd7e14;
     --bs-yellow: #ffc107;
     --bs-green: #198754;
@@ -20,13 +15,15 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-
     --bs-light-gray: #ddd;
+}
+
+:root {
+    --bs-blue: #0d6efd;
 }
 
 * {
     box-sizing: border-box;
-    /*font-family: Consolas, Monaco, monospace;*/
     font-family: Consolas,“Arial”,”Microsoft YaHei”,”黑体”,”宋体”,sans-serif;
 }
 

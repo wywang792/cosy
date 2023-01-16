@@ -1,11 +1,3 @@
-.main {
-    margin: 20px;
-}
-
-.top {
-
-}
-
 .content {
     display: flex;
     flex-wrap: nowrap;
@@ -13,19 +5,9 @@
     align-items: flex-start;
 }
 
-.content .start {
-    width: calc(100% - 366px);
-}
-.content .end {
-    width: 346px;
-    padding: 20px;
-    background: var(--bs-white);
+.content-paginator {
+    line-height: 20px;
+    text-align: center;
 }
 
-.content .end > div {
-    margin-bottom: 20px;
-}
 
-.content-archives, .content-categories, .content-tags {
-    min-height: 240px;
-}

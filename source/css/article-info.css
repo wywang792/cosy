@@ -20,6 +20,10 @@
     padding: 10px 50px;
 }
 
+.article-tags {
+    height: 52px;
+}
+
 .article-tags:before {
     content: "";
     position: absolute;
