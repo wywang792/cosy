@@ -1,5 +1,4 @@
 .site-layout {
-    position: relative;
     height: 100vh;
 }
 
@@ -13,12 +12,10 @@
 }
 
 .site-main {
-    position: absolute;
-    top: 0;
+    position: relative;
     left: 220px;
-    right: 0;
+    width: calc(100% - 220px);
     min-height: 100vh;
-    display: flex;
     background: var(--bg-light)
 }
 
@@ -28,10 +25,10 @@
 }
 
 .site-main > .site-widget {
+    position: absolute;
+    right: 20px;
+    top: 20px;
     width: 268px;
-    height: 96vh;
-    margin-top: 20px;
-    margin-right: 20px;
     padding: 20px;
     background-color: var(--bg-white);
 }

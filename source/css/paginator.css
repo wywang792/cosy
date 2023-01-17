@@ -2,12 +2,8 @@
     text-align: center;
 }
 
-.extend.prev {
-    float: left;
-}
-
-.extend.next {
-    float: right;
+.extend.prev, .extend.next {
+    margin: 0 4px;
 }
 
 .page-number {

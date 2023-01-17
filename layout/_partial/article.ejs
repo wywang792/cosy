@@ -10,7 +10,7 @@
         <% } else if (post.cover) { %>
             <img src="<%- url_for(post.cover) %>" alt="" height="300px">
         <% } else{ %>
-            <%= post.content %>
+            <%- post.content %>
         <% } %>
     </div>
     <div class="article-tags">
